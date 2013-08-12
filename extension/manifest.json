@@ -1,0 +1,22 @@
+{
+    "name": "Halyard",
+    "description": "Halyard Application",
+    "version": "0.0.1",
+    "app": {
+    	"urls": [
+	      	"*://app.node-frc.org/"
+	    ],
+	    "launch": {
+	      	"web_url": "http://app.node-frc.org"
+	    }
+    },
+    "permissions": [
+    	{
+    		"socket": [
+                "udp-send-to::1110",
+                "udp-bind::1110",
+                "udp-bind::1150"
+            ]
+    	}
+    ]
+}
